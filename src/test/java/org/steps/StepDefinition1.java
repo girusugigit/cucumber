@@ -1,6 +1,7 @@
 package org.steps;
 
 import org.base.BaseClass;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -32,6 +33,7 @@ public class StepDefinition1 extends BaseClass{
 	@Then("user will redirect to invalid credential page")
 	public void user_will_redirect_to_invalid_credential_page() {
 		System.out.println("User is in invalid credential page");
+		Assert.assertTrue(false);
 	}
 
 }
