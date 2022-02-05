@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="17.401508">
+<testcase classname="To validate Login functionality of fb application" name="To validate login with empty username and empty password" time="8.669038">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.steps.StepDefinition2.user_will_navigate_to_invalid_credential_page(StepDefinition2.java:23)&#13;&#10;&#9;at ✽.user will navigate to invalid credential page(file:src/test/resources/Features/login.feature:21)&#13;&#10;"><![CDATA[Given user need to be in login page.........................................passed
+When user should click login button.........................................passed
+Then user will navigate to invalid credential page..........................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.steps.StepDefinition2.user_will_navigate_to_invalid_credential_page(StepDefinition2.java:23)
+	at ✽.user will navigate to invalid credential page(file:src/test/resources/Features/login.feature:21)
+]]></failure>
+</testcase>
+<testcase classname="To validate search functionality of amazon application" name="To check the product page using search functionality" time="8.73247">
+<system-out><![CDATA[Given user need to be in amazon home page...................................passed
+When user should enter product name.........................................passed
+And user should click search button.........................................passed
+Then user will navigate to products page....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
